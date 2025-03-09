@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CV</title>
+    <link rel="icon" type="image/svg+xml" href = "../svgIcons/cv.svg">
+
+
+
+    <style>
+        body, html{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        /*background-color: #fafdff;*/
+        background-color: rgb(252, 248, 238);
+
+        background-color: white;
+        }
+
+
+
+        .pdf-canva {
+          position: absolute; 
+          top: 20%; 
+          left: 10%; 
+          width: 30%;
+          height: 61%;
+        }
+        .pdf-container2 {
+          position: absolute; 
+          top: 10%; 
+          left: 10%; 
+          width: 50%;
+          height: 80%;
+        }
+
+        .oswald-text {
+          font-family: "Oswald", sans-serif;
+          font-optical-sizing: auto;
+
+          font-weight: 350;
+          font-style: normal;
+          fill:#e6c153;
+  
+        }
+        #CanvaFormat {
+          position: absolute;
+          top: 15%;
+          left: 10%;
+          width: 30%;
+          height: 3%;
+          color:#e6c153;
+          font-size: 200%;
+          text-align: center;
+        }
+        #HarvardFormat {
+          position: absolute;
+          top: 15%;
+          left: 50%;
+          width: 30%;
+          height: 3%;
+          color:#e6c153;
+          font-size: 200%;
+          text-align: center;
+        }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    
+    <div id="CanvaFormat"> 
+      
+
+        CANVA FORMAT
+
+
+  
+    </div>
+    <div id="HarvardFormat"> 
+      
+
+      HARVARD FORMAT
+    </div>
+
+
+    <embed src="../pdfs/CV FELIX HERNANDEZ.pdf"  class="pdf-canva" type="application/pdf">
+
+      <svg id="randomSquares" width="45vw" height="90vh"></svg>
+
+      <script>
+        const svg = document.getElementById("randomSquares");
+        const numSquares = 500; // Number of squares
+    
+        for (let i = 0; i < numSquares; i++) {
+          const size = Math.random() * 50; // Random size between 0 and 50
+          const x = Math.random() * window.innerWidth;
+          const y = Math.random() * window.innerHeight;
+    
+          const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+          rect.setAttribute("x", x);
+          rect.setAttribute("y", y);
+          rect.setAttribute("width", size);
+          rect.setAttribute("height", size);
+          rect.setAttribute("fill", "orange"); // You can change the color
+    
+          svg.appendChild(rect);
+        }
+        </script>
+
+
+</body>
+
+
+</html>

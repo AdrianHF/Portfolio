@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analytics Projects</title>
+    <link rel="icon" type="image/svg+xml" href ="../svgIcons/ship.svg">
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Protest+Guerrilla&display=swap');
+
+      .titleFormat {
+          font-family: "Oswald", sans-serif;
+          font-optical-sizing: auto;
+
+          font-weight: 400;
+          font-style: normal;
+          font-size: 200%;
+          color: black;
+      }
+
+      .descriptionFormat {
+          font-family: "Oswald", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 300;
+          font-style: normal;
+          font-size: 150%;
+          color: black;
+      }
+
+      #title{
+        position: absolute;
+        
+
+        width:100% ;
+        height: 6%;
+        
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+
+
+      
+
+      #projectDescription{
+        position: absolute;
+        top: 10%;
+        left: 2%;
+
+        height: 50%;
+        width:40% ;
+
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
+
+
+      }
+    
+      #mainSVG{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+
+
+      }
+      
+      #textBox{
+
+        color:white;
+        position: absolute;
+        top: 10.5%;
+        left: 46%;
+        width: 40%;
+        height: 100%;
+        text-align: justify;
+
+
+      }
+    
+      .a{
+
+        stroke: initial;
+        transition: stroke 1s;
+
+      }
+
+
+      .a:hover{
+        
+        stroke:black;
+        transition: stroke 1s ; 
+
+      }
+
+
+
+
+      .clickable{
+        cursor:pointer
+    
+
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+    
+    <div id ="container">
+
+      
+      <div id="title" class ="titleFormat">
+        Titanic - Machine Learning from Disaster
+      </div>
+
+      <div id="projectDescription" class="descriptionFormat">
+        The Titanic: Machine Learning from Disaster project on Kaggle
+        is a popular data science competition.
+
+        The objective is to develop a predictive model that determines whether
+        a given passenger survived the Titanic disaster. This is achieved by analyzing 
+        a dataset that includes variables such as the passenger’s age, sex, fare, cabin, 
+        embarkation point, among others.
+       
+      </div>
+
+      <div id="textBox" class="descriptionFormat">
+
+        Since this is my first project using Artificial Intelligence, 
+        I wanted to see how far I could go without the need for a specific 
+        tutorial or any external help. Throughout the process, I learned about 
+        statistics and various AI models that could assist me with this task. 
+        Here is how it went:
+      </div>
+
+       
+    </div>
+    <svg id="mainSVG">
+
+
+      <svg id="expandButton" class ="clickable" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 18L18 12L12 6" stroke="#222222"/>
+        <path d="M6 18L12 12L6 6" stroke="#222222"/>
+      </svg>
+
+      <svg id = "squareEB" class ="clickable" width="800px" height="800px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><defs>
+        <style>
+          .a{
+            fill:transparent;
+            stroke:transparent;
+            stroke-linecap:round;
+            stroke-linejoin:round;
+          }
+
+        </style>
+      </defs>
+      <path class="a" d="M40.5,5.5H7.5a2,2,0,0,0-2,2v33a2,2,0,0,0,2,2h33a2,2,0,0,0,2-2V7.5A2,2,0,0,0,40.5,5.5Z"/>
+      </svg>
+
+      <svg id="numberOne"fill="#000000" width="800px" height="800px" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
+        <path d="M136,32V224a4,4,0,0,1-8,0V39.47217L86.21777,67.31445a3.99977,3.99977,0,1,1-4.43554-6.65722l48-31.98584A3.99993,3.99993,0,0,1,136,32Z"/>
+      </svg>
+
+      <svg id = "squareNO" class ="clickable" width="800px" height="800px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><defs>
+        <style>
+         
+
+        </style>
+      </defs>
+      <path class="a1" d="M40.5,5.5H7.5a2,2,0,0,0-2,2v33a2,2,0,0,0,2,2h33a2,2,0,0,0,2-2V7.5A2,2,0,0,0,40.5,5.5Z"/>
+      </svg>
+
+
+    </svg>
+</body>
+
+<script>
+
+expandButton = document.getElementById("expandButton")
+
+
+expandButton.setAttribute("x","41%");
+expandButton.setAttribute("y","9.7%");
+expandButton.setAttribute("width","5%");
+expandButton.setAttribute("height","5%");
+
+squareEB = document.getElementById("squareEB");
+
+squareEB.setAttribute("x","41%");
+squareEB.setAttribute("y","9.7%");
+squareEB.setAttribute("width","5%");
+squareEB.setAttribute("height","5%");
+
+flag = 0;
+console.log(flag);
+
+squareNO = document.getElementById("squareNO");
+
+squareNO.setAttribute("x","30%");
+squareNO.setAttribute("y","30%");
+squareNO.setAttribute("width","5%");
+squareNO.setAttribute("height","5%");
+
+a1 = document.querySelector(".a1");
+
+a1.setAttribute("stroke-linejoin","none");
+a1.setAttribute("stroke-linecap","none");
+a1.setAttribute("fill","none");
+a1.setAttribute("stroke","none");
+
+numberOne = document.getElementById("numberOne");
+
+numberOne.setAttribute("width","0");
+numberOne.setAttribute("height","0");
+
+
+
+document.getElementById('expandButton').addEventListener('click', function() {
+
+
+  if (flag ==0){
+
+    textBox = document.getElementById("textBox");
+    textBox.style.color = 'black';  
+    textBox.style.transition = "color 3s";
+
+    a1.setAttribute("stroke-linejoin","round");
+    a1.setAttribute("stroke-linecap","round");
+
+    a1.setAttribute("fill","transparent");
+    a1.setAttribute("stroke","black");
+
+    numberOne.setAttribute("width","4%");
+    numberOne.setAttribute("height","4%");
+    numberOne.setAttribute("x","30.5%");
+    numberOne.setAttribute("y","30.5%");
+
+  } else {
+
+    textBox = document.getElementById("textBox");
+    textBox.style.color = 'transparent';  
+    textBox.style.transition = "color 1s";
+
+    numberOne.setAttribute("fill","transparent");
+    numberOne.setAttribute("transition","fill 3s");
+
+
+  }
+  });
+
+
+  
+
+document.getElementById('squareEB').addEventListener('click', function() {
+
+if (flag ==0){
+
+textBox = document.getElementById("textBox");
+textBox.style.color = 'black';  
+textBox.style.transition = "color 3s";
+
+
+a1.setAttribute("stroke-linejoin","round");
+a1.setAttribute("stroke-linecap","round");
+
+a1.setAttribute("fill","transparent");
+a1.setAttribute("stroke","black");
+a1.style.transition = "stroke 3s";
+
+numberOne.setAttribute("width","4%");
+    numberOne.setAttribute("height","4%");
+    numberOne.setAttribute("x","30.5%");
+    numberOne.setAttribute("y","30.5%");
+    numberOne.setAttribute("fill","black");
+    numberOne.style.transition = "fill 3s";
+
+
+} else {
+
+textBox = document.getElementById("textBox");
+textBox.style.color = 'transparent';  
+textBox.style.transition = "color 1s";
+
+a1.setAttribute("fill","transparent");
+a1.setAttribute("stroke","transparent");
+a1.style.transition = "stroke 1s";
+
+numberOne.setAttribute("fill","transparent");
+numberOne.style.transition = "fill 1s";
+
+
+}
+});
+
+
+
+document.getElementById('squareEB').addEventListener('click', function() {
+
+  if (flag == 1){
+
+    document.querySelector('.a').style.stroke = "transparent";
+
+
+    flag = 0;
+    console.log(flag);
+
+
+  }
+  else
+  {
+  
+  console.log(flag);
+  document.querySelector('.a').style.stroke = "black";
+  
+
+  flag = 1;
+  console.log(flag);
+
+  }
+});
+
+
+
+
+
+
+</script>
+
+</html>
