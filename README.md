@@ -1,1 +1,2 @@
-![alt text](img/2.png)
+img/websiteStructure.png
+
