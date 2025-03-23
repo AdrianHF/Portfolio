@@ -1,2 +1,3 @@
-img/websiteStructure.png
 
+
+![alt text](img/websiteStructure.png)
