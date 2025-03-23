@@ -1,0 +1,26 @@
+html{
+
+
+    background-color:rgb(252, 248, 238); 
+    /*background-color: white; */
+
+    }
+  .oswald-text {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    }
+.divContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+}
+
+.text {
+  position: absolute;
+  top: 20%;
+  left: 13%;
+}
+
