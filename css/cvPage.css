@@ -56,3 +56,20 @@ html {
    
 }
 
+#svgWallpaper {
+
+position:absolute;
+top: 0;
+left: 0;
+
+}
+
+#homepageSquare {
+
+position:absolute;
+top: 20px;
+left: 20px;
+width: 100px;
+height: 100px;
+
+}
