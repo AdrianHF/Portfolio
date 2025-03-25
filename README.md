@@ -1,3 +1,3 @@
 
 
-![alt text](img/websiteStructure.png)
+![alt text](assets/img/websiteStructure.png)

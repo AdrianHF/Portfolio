@@ -1,0 +1,61 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /*background-color: #fafdff;*/
+    background-color: rgb(252, 248, 238);
+
+    background-color: white;
+}
+
+
+
+.pdf-canva {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 30%;
+    height: 61%;
+}
+
+.pdf-container2 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 50%;
+    height: 80%;
+}
+
+.oswald-text {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+
+    font-weight: 350;
+    font-style: normal;
+    fill: #e6c153;
+
+}
+
+#CanvaFormat {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 30%;
+    height: 3%;
+    color: #e6c153;
+    font-size: 200%;
+    text-align: center;
+}
+
+#HarvardFormat {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    width: 30%;
+    height: 3%;
+    color: #e6c153;
+    font-size: 200%;
+    text-align: center;
+}

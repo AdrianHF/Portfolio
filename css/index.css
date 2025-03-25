@@ -1,13 +1,12 @@
-
-
-body, html{
+body,
+html {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
   /*background-color: #fafdff;*/
   /*background-color: #E7F0F7; */
-  background-color:#fcf8ee;
+  background-color: #fcf8ee;
 
 }
 
@@ -88,41 +87,39 @@ body, html{
 
   font-weight: 350;
   font-style: normal;
-  
+
 }
 
 
-.circle-hover:hover{
+.circle-hover:hover {
 
   /*fill: #d0e1ed;*/
-  fill:#f1e3ba; 
- 
+  fill: #f1e3ba;
+
 }
 
 .circle-hover.hovered {
-  fill:#f1e3ba; 
+  fill: #f1e3ba;
 
 
 }
 
-.circle-hover{
+.circle-hover {
 
-  fill:#fcf8ee; 
+  fill: #fcf8ee;
 
 
 }
 
-.black-circle{
+.black-circle {
 
-  fill:#fcf8ee;
+  fill: #fcf8ee;
 
 }
 
 
-.black-circle:hover{
+.black-circle:hover {
 
   fill: black;
 
 }
-
-

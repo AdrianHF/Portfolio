@@ -35,7 +35,7 @@ ship.setAttribute('width', "0");
 ship.setAttribute('height', "0");
 
 powerBI = document.getElementById("powerBI");
-powerBI.setAttribute("width","0");
+powerBI.setAttribute("width", "0");
 powerBI.setAttribute("height", "0");
 
 
@@ -128,7 +128,7 @@ document.getElementById('black-circle').addEventListener('click', function () {
         sqlIcon.setAttribute('width', '0');
         sqlIcon.setAttribute('height', '0');
 
-        powerBI.setAttribute("width","0");
+        powerBI.setAttribute("width", "0");
         powerBI.setAttribute("height", "0");
 
 
@@ -173,10 +173,10 @@ document.getElementById('black-circle').addEventListener('click', function () {
       sqlIcon.setAttribute('x', '36%');
       sqlIcon.setAttribute('y', '63.8%');
 
-  
-      powerBI.setAttribute("width","6.8%");
+
+      powerBI.setAttribute("width", "6.8%");
       powerBI.setAttribute("height", "6.8%");
-      powerBI.setAttribute("x","53.8%");
+      powerBI.setAttribute("x", "53.8%");
       powerBI.setAttribute("y", "53.7%");
 
 

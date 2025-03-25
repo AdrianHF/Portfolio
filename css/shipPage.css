@@ -1,0 +1,96 @@
+.titleFormat {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    color: black;
+}
+
+.descriptionFormat {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 150%;
+    color: black;
+}
+
+#title{
+  position: absolute;
+  
+
+  width:100% ;
+  height: 6%;
+  
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+
+#projectDescription{
+  position: absolute;
+  top: 10%;
+  left: 2%;
+
+  height: 50%;
+  width:40% ;
+
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+#mainSVG{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+
+
+}
+
+#textBox{
+
+  color:white;
+  position: absolute;
+  top: 10.5%;
+  left: 46%;
+  width: 40%;
+  height: 100%;
+  text-align: justify;
+
+
+}
+
+.a{
+
+  stroke: initial;
+  transition: stroke 1s;
+
+}
+
+
+.a:hover{
+  
+  stroke:black;
+  transition: stroke 1s ; 
+
+}
+
+
+
+
+.clickable{
+  cursor:pointer
+
+
+}
