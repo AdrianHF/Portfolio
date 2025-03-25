@@ -28,15 +28,6 @@ html {
     height: 80%;
 }
 
-.oswald-text {
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-
-    font-weight: 350;
-    font-style: normal;
-    fill: #e6c153;
-
-}
 
 #CanvaFormat {
     position: absolute;
@@ -44,9 +35,11 @@ html {
     left: 10%;
     width: 30%;
     height: 3%;
-    color: #e6c153;
+    /*color: #e6c153;*/
+    color: black;
     font-size: 200%;
     text-align: center;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 #HarvardFormat {
@@ -55,7 +48,11 @@ html {
     left: 50%;
     width: 30%;
     height: 3%;
-    color: #e6c153;
+    /*color: #e6c153;*/
+    color: black;
     font-size: 200%;
     text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+   
 }
+
