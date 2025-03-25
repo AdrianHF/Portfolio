@@ -14,24 +14,24 @@ html {
 
 .pdf-canva {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 10%;
     width: 30%;
-    height: 61%;
+    height: 75%;
 }
 
 .pdf-container2 {
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 10%;
     width: 50%;
-    height: 80%;
+    height: 75%;
 }
 
 
 #CanvaFormat {
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 10%;
     width: 30%;
     height: 3%;
@@ -44,7 +44,7 @@ html {
 
 #HarvardFormat {
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 50%;
     width: 30%;
     height: 3%;
