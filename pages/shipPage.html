@@ -1,95 +1,53 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Analytics Projects</title>
-  <link rel="icon" type="image/svg+xml" href="../assets/svgIcons/ship.svg">
-  <link rel="stylesheet" href="../css/shipPage.css">
-
+  <title>Web Page Example</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Protest+Guerrilla&display=swap');
+    /* Add some basic styles */
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    .top-button {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    .text-box-section {
+      margin: 20px 0;
+    }
+    .button {
+      margin-left: 10px;
+    }
   </style>
-
 </head>
-
 <body>
+  <div class="container">
+    <!-- Top left corner button -->
+    <button class="top-button" onclick="alert('Top button clicked!')">Top Left Button</button>
 
-  <div id="container">
+    <!-- Page Title -->
+    <h1>Page Title</h1>
 
-
-    <div id="title" class="titleFormat">
-      Titanic - Machine Learning from Disaster
+    <!-- First Text Box and Button -->
+    <div class="text-box-section">
+      <input type="text" id="textbox1" placeholder="Enter text here">
+      <button class="button" onclick="alert('Button 1 clicked!')">Button 1</button>
     </div>
 
-    <div id="projectDescription" class="descriptionFormat">
-      The Titanic: Machine Learning from Disaster project on Kaggle
-      is a popular data science competition.
-
-      The objective is to develop a predictive model that determines whether
-      a given passenger survived the Titanic disaster. This is achieved by analyzing
-      a dataset that includes variables such as the passenger’s age, sex, fare, cabin,
-      embarkation point, among others.
-
+    <!-- Second Text Box and Button -->
+    <div class="text-box-section">
+      <input type="text" id="textbox2" placeholder="Enter more text here">
+      <button class="button" onclick="alert('Button 2 clicked!')">Button 2</button>
     </div>
-
-    <div id="textBox" class="descriptionFormat">
-
-      Since this is my first project using Artificial Intelligence,
-      I wanted to see how far I could go without the need for a specific
-      tutorial or any external help. Throughout the process, I learned about
-      statistics and various AI models that could assist me with this task.
-      Here is how it went:
-    </div>
-
-
   </div>
-  <svg id="mainSVG">
 
-
-    <svg id="expandButton" class="clickable" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
-      xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 18L18 12L12 6" stroke="#222222" />
-      <path d="M6 18L12 12L6 6" stroke="#222222" />
-    </svg>
-
-    <svg id="squareEB" class="clickable" width="800px" height="800px" viewBox="0 0 48 48"
-      xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <style>
-          .a {
-            fill: transparent;
-            stroke: transparent;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-          }
-        </style>
-      </defs>
-      <path class="a" d="M40.5,5.5H7.5a2,2,0,0,0-2,2v33a2,2,0,0,0,2,2h33a2,2,0,0,0,2-2V7.5A2,2,0,0,0,40.5,5.5Z" />
-    </svg>
-
-    <svg id="numberOne" fill="#000000" width="800px" height="800px" viewBox="0 0 256 256" id="Flat"
-      xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M136,32V224a4,4,0,0,1-8,0V39.47217L86.21777,67.31445a3.99977,3.99977,0,1,1-4.43554-6.65722l48-31.98584A3.99993,3.99993,0,0,1,136,32Z" />
-    </svg>
-
-    <svg id="squareNO" class="clickable" width="800px" height="800px" viewBox="0 0 48 48"
-      xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <style>
-
-
-        </style>
-      </defs>
-      <path class="a1" d="M40.5,5.5H7.5a2,2,0,0,0-2,2v33a2,2,0,0,0,2,2h33a2,2,0,0,0,2-2V7.5A2,2,0,0,0,40.5,5.5Z" />
-    </svg>
-
-
-  </svg>
+  <script>
+    // Add JavaScript functionality for buttons here if needed
+  </script>
 </body>
-
-<script src="../js/shipPage.js"> </script>
-
 </html>
