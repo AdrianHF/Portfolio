@@ -1,3 +1,6 @@
+/*
+
+
 expandButton = document.getElementById("expandButton")
 
 
@@ -139,6 +142,16 @@ document.getElementById('squareEB').addEventListener('click', function () {
 
     }
 });
+*/
 
 
+const button = document.getElementById('expandButton');
+
+
+button.addEventListener('click', function(){
+
+alert("apoco si");
+
+
+});
 

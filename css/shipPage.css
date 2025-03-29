@@ -27,7 +27,7 @@
 
 #homepageButtonDiv {
 
-  flex-basis: 8%;
+  flex-basis: 7em;
 
   margin-left: 1%;
   margin-top: 1%;
@@ -51,10 +51,6 @@
   
 }
 
-
-
-
-
 #title {
 
   font-size: 180%;
@@ -62,8 +58,6 @@
   font-weight: 400;
   font-style: normal;
  
-
-
 }
 
 
@@ -73,16 +67,21 @@ p {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  font-size: 120%
-
+  font-size: 120%;
+  
+  margin:0;
 }
 
 
 #textDiv {
 
+
+  height: 10%;
+  width: 10%;
   /*border: 1px solid black;*/
   flex-basis: 90%;
   margin: auto;
+
 
  
 
@@ -90,8 +89,23 @@ p {
 
 #textDiv1 {
 
-  flex-basis: 100%;
+  flex-basis: 83%;
 
-
+  margin: auto;
 
 }
+
+button{
+
+cursor:pointer;
+background-color: transparent;
+width: 3em;
+height: 3em;
+border-width: .1em;
+display: flex;
+justify-content: center; /* Centers content horizontally */
+align-items: center; /* Centers content vertically */
+
+}
+
+
