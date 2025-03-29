@@ -1,4 +1,4 @@
-const canvas = document.getElementById("svgWallpaper");
+const canvas = document.getElementById("bananaWallpaper");
         const ctx = canvas.getContext("2d");
 
         // Resize canvas to fit the window
