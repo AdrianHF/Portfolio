@@ -88,7 +88,9 @@ button {
 
 
 
-
+/*
+The Titanic: Machine Learning from Disaster project
+*/
 #textDiv {
 
 
@@ -103,6 +105,10 @@ button {
 
 }
 
+
+/*
+Since this is my first project using Artificial Intelligence... 
+*/
 #textDiv1 {
   display: flex;
   /* Aligns child elements in a row */
@@ -112,7 +118,32 @@ button {
   /* Optional: Adds spacing between the button and text */
   margin-left: 5%;
   margin-right: 9%;
+  flex-basis: 95%;
+
 }
+
+/*
+This competition presents two datasets containing... 
+*/
+
+#textDiv2{
+
+  display: flex;
+  /* Aligns child elements in a row */
+  align-items: flex-start;
+  /* Vertically centers items */
+  gap: 10px;
+  /* Optional: Adds spacing between the button and text */
+  margin-left: 5%;
+  margin-right: 9%;
+  flex-basis: 95%;
+
+
+
+}
+
+
+
 
 #expandButton {
   display: flex;
@@ -130,3 +161,18 @@ button {
 #transparentText.visible {
   color: black; /* Final state is black */
 }
+
+
+.rounded-highlight {
+  background-color: gray; /* Modern blue color - change to your preference */
+  color: white; /* White text */
+  padding: 2px 8px; /* Adjust padding for visual balance */
+  border-radius: 5px; /* Controls the roundness of corners */
+  display: inline; /* Ensures it stays inline with text */
+  font-weight: 400; /* Slightly bolder text */
+  box-decoration-break: clone; /* Ensures rounded corners on line breaks */
+  -webkit-box-decoration-break: clone; /* For Safari support */
+  padding: 0.03em 0.5em;
+
+}
+
