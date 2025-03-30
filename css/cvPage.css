@@ -53,23 +53,23 @@ html {
     font-size: 200%;
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
-   
+
 }
 
 #svgWallpaper {
 
-position:absolute;
-top: 0;
-left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 
 }
 
 #homepageSquare {
 
-position:absolute;
-top: 20px;
-left: 20px;
-width: 100px;
-height: 100px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
 
 }

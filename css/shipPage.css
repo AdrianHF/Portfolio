@@ -126,7 +126,7 @@ Since this is my first project using Artificial Intelligence...
 This competition presents two datasets containing... 
 */
 
-#textDiv2{
+#textDiv2 {
 
   display: flex;
   /* Aligns child elements in a row */
@@ -153,26 +153,37 @@ This competition presents two datasets containing...
 }
 
 #transparentText {
-  display: none; /* Hidden by default */
-  color: transparent; /* Initially transparent */
-  transition: color 2s ease-in-out; /* Smooth transition */
+  display: none;
+  /* Hidden by default */
+  color: transparent;
+  /* Initially transparent */
+  transition: color 2s ease-in-out;
+  /* Smooth transition */
 }
 
 #transparentText.visible {
-  color: black; /* Final state is black */
+  color: black;
+  /* Final state is black */
 }
 
 
 .rounded-highlight {
-  background-color: gray; /* Modern blue color - change to your preference */
-  color: white; /* White text */
-  padding: 2px 8px; /* Adjust padding for visual balance */
-  border-radius: 5px; /* Controls the roundness of corners */
-  display: inline; /* Ensures it stays inline with text */
-  font-weight: 400; /* Slightly bolder text */
-  box-decoration-break: clone; /* Ensures rounded corners on line breaks */
-  -webkit-box-decoration-break: clone; /* For Safari support */
+  background-color: gray;
+  /* Modern blue color - change to your preference */
+  color: white;
+  /* White text */
+  padding: 2px 8px;
+  /* Adjust padding for visual balance */
+  border-radius: 5px;
+  /* Controls the roundness of corners */
+  display: inline;
+  /* Ensures it stays inline with text */
+  font-weight: 400;
+  /* Slightly bolder text */
+  box-decoration-break: clone;
+  /* Ensures rounded corners on line breaks */
+  -webkit-box-decoration-break: clone;
+  /* For Safari support */
   padding: 0.03em 0.5em;
 
 }
-
