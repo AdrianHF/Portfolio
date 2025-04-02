@@ -7,27 +7,16 @@
   <title>Kaggle Titanic</title>
   <link rel="stylesheet" href="../css/shipPage.css">
 
-
-
-
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
   </style>
 
-
-
 </head>
 
 <body>
 
-
-
-
-
-
   <div id="container">
-
 
     <div id="homepageButtonDiv">
 
@@ -35,12 +24,10 @@
 
         <svg id="homepageSquare" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
 
-
           <rect height="100%" width="100%" rx="10" ry="10" stroke="black" stroke-width="1.8" fill="white" />
           <svg x="12" y="0" version="1.1" id="treeIcon" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="190" viewBox="0 20 90 45"
             xml:space="preserve">
-
 
             <line id="line1" x1="50%" y1="100%" x2="50%" y2="88%" stroke="black" stroke-width="0.2" />
             <line id="line2" x1="50%" y1="88%" x2="40%" y2="78%" stroke="black" stroke-width="0.2" />
@@ -75,8 +62,6 @@
             <line id="line31" x1="70%" y1="74%" x2="75%" y2="66%" stroke="black" stroke-width="0.2" />
             <line id="line32" x1="70%" y1="74%" x2="74%" y2="72%" stroke="black" stroke-width="0.2" />
 
-
-
             <circle id="circle1" cx="50%" cy="88%" stroke="black" stroke-width="0.2" fill="white" r="2%" />
             <circle id="circle2" cx="40%" cy="78.3%" stroke="black" stroke-width="0.2" fill="white" r="2%" />
             <circle id="circle3" cx="33%" cy="74%" stroke="black" stroke-width="0.2" fill="white" r="2%" />
@@ -110,20 +95,16 @@
             <circle id="circle31" cx="75%" cy="66%" stroke="black" stroke-width="0.2" fill="white" r="2%" />
             <circle id="circle32" cx="74%" cy="72%" stroke="black" stroke-width="0.2" fill="white" r="2%" />
 
-
           </svg>
         </svg>
       </a>
 
     </div>
 
-
-
     <div id="titleDiv">
       <h1 id="title"> Titanic - Machine Learning from Disaster </h1>
 
     </div>
-
 
     <div id="textDiv">
       <p>
@@ -148,7 +129,6 @@
 
     </div>
 
-
     <div id="textDiv1">
       <button id="expandButton">
         <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
@@ -157,27 +137,271 @@
           <path d="M6 18L12 12L6 6" stroke="#222222" />
         </svg>
       </button>
-      <p id="transparentText">
-        Since this is my first project using Artificial Intelligence,
-        I wanted to see how far I could go without the need for a specific
-        tutorial or any external help. Throughout the process, I learned about
-        statistics and various AI models that could assist me with this task.
-        Here is how it went:
-        <br></br>
-        This competition presents two datasets containing passenger information from the historic RMS Titanic: <br></br>
-        <span class="rounded-highlight"> train.csv:</span> Contains details for 891 passengers with survival outcomes
 
-        <br><br>
-        <span class="rounded-highlight">test.csv:</span> Contains details for 418 additional passengers without survival
-        outcomes
+      <g id="transparentText">
+        <p class="column">
+          Since this is my first project using Artificial Intelligence,
+          I wanted to see how far I could go without the need for a specific
+          tutorial or any external help. Throughout the process, I learned about
+          statistics and various AI models that could assist me with this task.
+          Here is how it went:
+          <br></br>
+          This competition presents two datasets containing passenger information from the historic RMS Titanic:
+          <br></br>
+        </p>
+        <div id="twoColumns">
 
-      </p>
+          <div class="column">
+            <p>
 
+              <span class="rounded-highlight"> train.csv:</span> Contains details for 891 passengers with survival
+              outcomes:
+            <table>
+              <thead>
+                <tr>
+                  <th>PassengerId</th>
+                  <th>Survived</th>
+                  <th>Pclass</th>
+                  <th>Name</th>
+                  <th>Sex</th>
+                  <th>Age</th>
+                  <th>SibSp</th>
+                  <th>Parch</th>
+                  <th>Ticket</th>
+                  <th>Fare</th>
+                  <th>Cabin</th>
+                  <th>Embarked</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>3</td>
+                  <td>Braund, Mr. Owen Harris</td>
+                  <td>male</td>
+                  <td>22.0</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>A/5 21171</td>
+                  <td>7.2500</td>
+                  <td>NaN</td>
+                  <td>S</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>Cumings, Mrs. John Bradley (Florence Briggs Thayer)</td>
+                  <td>female</td>
+                  <td>38.0</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>PC 17599</td>
+                  <td>71.2833</td>
+                  <td>C85</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>1</td>
+                  <td>3</td>
+                  <td>Heikkinen, Miss. Laina</td>
+                  <td>female</td>
+                  <td>26.0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>STON/O2. 3101282</td>
+                  <td>7.9250</td>
+                  <td>NaN</td>
+                  <td>S</td>
+                </tr>
+                <tr>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                </tr>
+                <tr>
+                  <td>889</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>Behr, Mr. Karl Howell</td>
+                  <td>male</td>
+                  <td>26.0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>111369</td>
+                  <td>30.0000</td>
+                  <td>C148</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <td>890</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>Behr, Mr. Karl Howell</td>
+                  <td>male</td>
+                  <td>26.0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>111369</td>
+                  <td>30.0000</td>
+                  <td>C148</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <td>891</td>
+                  <td>0</td>
+                  <td>3</td>
+                  <td>Dooley, Mr. Patrick</td>
+                  <td>male</td>
+                  <td>32.0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>370376</td>
+                  <td>7.7500</td>
+                  <td>NaN</td>
+                  <td>Q</td>
+                </tr>
+              </tbody>
+            </table>
+            </p>
+          </div>
+
+          <div class="column">
+
+            <p>
+              <span class="rounded-highlight">test.csv:</span> Contains 418 additional passengers data without
+              survival outcomes:
+            <table>
+              <thead>
+                <tr>
+                  <th>PassengerId</th>
+                  <th>Pclass</th>
+                  <th>Name</th>
+                  <th>Sex</th>
+                  <th>Age</th>
+                  <th>SibSp</th>
+                  <th>Parch</th>
+                  <th>Ticket</th>
+                  <th>Fare</th>
+                  <th>Cabin</th>
+                  <th>Embarked</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>892</td>
+                  <td>3</td>
+                  <td>Kelly, Mr. James</td>
+                  <td class="male">male</td>
+                  <td>34.5</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>330911</td>
+                  <td>7.8292</td>
+                  <td>NaN</td>
+                  <td>Q</td>
+                </tr>
+                <tr>
+                  <td>893</td>
+                  <td>3</td>
+                  <td>Wilkes, Mrs. James (Ellen Needs)</td>
+                  <td class="female">female</td>
+                  <td>47.0</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>363272</td>
+                  <td>7.0000</td>
+                  <td>NaN</td>
+                  <td>S</td>
+                </tr>
+                <tr>
+                  <td>894</td>
+                  <td>2</td>
+                  <td>Myles, Mr. Thomas Francis</td>
+                  <td class="male">male</td>
+                  <td>62.0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>240276</td>
+                  <td>9.6875</td>
+                  <td>NaN</td>
+                  <td>Q</td>
+                </tr>
+                <tr>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                  <td>...</td>
+                </tr>
+
+                <tr>
+                  <td>1307</td>
+                  <td>3</td>
+                  <td>Saether, Mr. Simon Sivertsen</td>
+                  <td class="male">male</td>
+                  <td>38.5</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>SOTON/O.Q. 3101262</td>
+                  <td>7.2500</td>
+                  <td>NaN</td>
+                  <td>S</td>
+                </tr>
+                <tr>
+                  <td>1308</td>
+                  <td>3</td>
+                  <td>Ware, Mr. Frederick</td>
+                  <td class="male">male</td>
+                  <td>NaN</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>359309</td>
+                  <td>8.0500</td>
+                  <td>NaN</td>
+                  <td>S</td>
+                </tr>
+                <tr>
+                  <td>1309</td>
+                  <td>3</td>
+                  <td>Peter, Master. Michael J</td>
+                  <td class="male">male</td>
+                  <td>NaN</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>2668</td>
+                  <td>22.3583</td>
+                  <td>NaN</td>
+                  <td>C</td>
+                </tr>
+              </tbody>
+            </table>
+
+            </p>
+          </div>
+
+      </g>
 
     </div>
 
     <script src="../js/shipPage.js"></script>
-
 
 </body>
 
