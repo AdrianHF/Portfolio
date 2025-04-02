@@ -11,3 +11,6 @@ button.addEventListener('click', () => {
         setTimeout(() => tText.style.display = 'none', 500); // Hide the element after transition completes
     }
 });
+
+
+
