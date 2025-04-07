@@ -233,3 +233,19 @@ border:none;
 
 }
 
+#codeDiv{
+
+margin-left: 5%;
+width: 100%;
+flex-basis: 100%;
+margin-right: 9%
+}
+
+
+#cmdFont{
+
+background-color: black;
+color: white;
+
+
+}

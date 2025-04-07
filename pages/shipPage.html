@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kaggle Titanic</title>
   <link rel="stylesheet" href="../css/shipPage.css">
-
+  <link rel='stylesheet' href="../css/prism.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
@@ -396,18 +396,62 @@
 
             </p>
           </div>
+          </div>
 
       </g>
 
     </div>
+
+    <div id="codeDiv">
+      <p>
+        Before diving into data analysis, it's crucial to first ensure the quality of our data. Higher-quality data
+        leads to more reliable and insightful conclusions.
+        Our dataset contains some missing data points, leaving the values for those entries unknown.
+        This could be attributed to either the information being lost or not adequately collected. <br></br>
+        The best way to know which values are missing in our data set is by using pandas with the following code:
+      </p>
+      <pre>
+        <code class = 'language-python'>
+import pandas as pd
+
+df = pd.read_csv('train.csv')
+df = df.isnull().sum()
+          
+print(df)</code>
+      </pre>
+      <p>
+        Which results on the following outcome:
+      </p>
+
+      <pre id="cmdFont">
+        
+        PassengerId      0 
+        Survived         0
+        Pclass           0
+        Name             0
+        Sex              0
+        Age            177
+        SibSp            0
+        Parch            0
+        Ticket           0
+        Fare             0
+        Cabin          687
+        Embarked         2
+        dtype: int64
+      </pre>
+
+    </div>
+
+
     <div>
       <iframe src="http://127.0.0.1:8050" width="100%" height="600"></iframe>
 
     </div>
-    
 
-    <script src="../js/shipPage.js"></script>
 
+    <script src="../js/shipPage.js">
+    </script>
+    <script src="../js/prism.js"></script>
 </body>
 
 </html>
