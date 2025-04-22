@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
+
+#divContainer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+
+#homepageButtonDiv {
+
+
+    top:0;
+    flex-basis: 7em;
+  
+    margin-left: 1%;
+    margin-top: 1%;
+    flex-shrink: 0;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+  
+  
+  
+  
+  #homepageButtonDiv a {
+    display: flex;         /* ¡LA CLAVE! Trata el <a> como contenedor flex */
+    align-items: center;   /* Alinea verticalmente el SVG y el Texto */
+    gap: 5px;             /* Espacio entre el SVG y el Texto (ajusta) */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: black;          /* O el color que desees para el texto */
+    /* background-color: lightblue; /* Fondo para depurar el área del enlace */
+    pointer-events: none;
+  }
+  
+  /* --- Estilo del SVG Cuadrado/Árbol --- */
+  #homepageButtonDiv a #homepageSquare {
+    width: 30%;   /* Dale un tamaño fijo al SVG (ajusta) */
+    height: 30%;  /* Dale un tamaño fijo al SVG (ajusta) */
+    display: block; /* Buena práctica para SVG */
+    flex-shrink: 0; /* Evita que el SVG se encoja */
+    pointer-events: auto;
+  }
+  
+  #homepageButtonDiv a p {
+   
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    font-size: 120%;
+    line-height: 1.2;
+    margin: 0;
+    text-align: left;
+    /* --- TRICK PART 2: Re-enable clicks specifically here --- */
+    pointer-events: auto; /* Make the text clickable again */
+    cursor: pointer;      /* Ensure pointer cursor shows on text */
+    /* --- --- --- */
+  }
