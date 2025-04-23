@@ -261,7 +261,7 @@ color: white;
   flex-shrink: 0;
   align-items: center;
   display: flex;
-  position: absolute;
+  position: relative;
 }
 
 
@@ -279,8 +279,8 @@ color: white;
 
 /* --- Estilo del SVG Cuadrado/Árbol --- */
 #homepageButtonDiv a #homepageSquare {
-  width: 30%;   /* Dale un tamaño fijo al SVG (ajusta) */
-  height: 30%;  /* Dale un tamaño fijo al SVG (ajusta) */
+  width: 100%;   /* Dale un tamaño fijo al SVG (ajusta) */
+  height:100%;  /* Dale un tamaño fijo al SVG (ajusta) */
   display: block; /* Buena práctica para SVG */
   flex-shrink: 0; /* Evita que el SVG se encoja */
   pointer-events: auto;

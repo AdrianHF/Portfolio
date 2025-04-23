@@ -12,5 +12,18 @@ button.addEventListener('click', () => {
     }
 });
 
+const tText1 = document.getElementById('codeDiv');
+tText1.style.display = 'none';
+
+button.addEventListener('click', () => {
+    if (!tText1.classList.contains('visible')) {
+        tText1.style.display = 'block'; // Make the element visible
+        setTimeout(() => tText1.classList.add('visible'), 0); // Add transition effect after display update
+    } else {
+        tText1.classList.remove('visible'); // Remove transition effect
+        setTimeout(() => tText1.style.display = 'none', 500); // Hide the element after transition completes
+    }
+});
+
 
 
