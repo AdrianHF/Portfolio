@@ -117,6 +117,8 @@ html, body {
     text-align: justify;
     justify-content: center;
     align-items: center;
+    margin-left: 3%;
+    margin-right: 3%;
 
   }
 
@@ -130,7 +132,7 @@ html, body {
     font-style: normal;
     font-size: 120%;
     
-    margin: 0;
+    
   }
 
 
@@ -139,7 +141,7 @@ html, body {
     height: 80%;
     width: 100%;
     justify-content: center;
-
+    margin: 0;
 
   }
 
