@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /* Added Roboto import from your previous example */
 
-#divContainer {
-    width: 100%;
+html, body {
     height: 100%;
-    position: absolute;
+    margin: 0; /* Es buena idea quitar márgenes por defecto */
+    padding: 0; /* Es buena idea quitar paddings por defecto */
   }
-
 
 #homepageButtonDiv {
 
@@ -36,8 +36,8 @@
   
   /* --- Estilo del SVG Cuadrado/Árbol --- */
   #homepageButtonDiv a #homepageSquare {
-    width: 30%;   /* Dale un tamaño fijo al SVG (ajusta) */
-    height: 30%;  /* Dale un tamaño fijo al SVG (ajusta) */
+    width: 100%;   /* Dale un tamaño fijo al SVG (ajusta) */
+    height:100%;  /* Dale un tamaño fijo al SVG (ajusta) */
     display: block; /* Buena práctica para SVG */
     flex-shrink: 0; /* Evita que el SVG se encoja */
     pointer-events: auto;
@@ -57,4 +57,75 @@
     pointer-events: auto; /* Make the text clickable again */
     cursor: pointer;      /* Ensure pointer cursor shows on text */
     /* --- --- --- */
+  }
+
+  #container {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+  
+    height: 100%;
+    width: 100%;
+    
+  
+  }
+  
+  
+  #homepageButtonDiv {
+  
+    flex-basis: 7em;
+  
+    margin-left: 1%;
+    margin-top: 1%;
+  
+  }
+  
+  
+  
+  
+  
+  #titleDiv {
+  
+    height: 10%;
+    width: 75%;
+    display: flex;
+    /* Use Flexbox */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+  
+  }
+  
+  #title {
+  
+    font-size: 180%;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+  }
+
+  #textDiv{
+
+    width: 100%;
+
+  }
+
+  #excelDiv {
+    display: flex;
+    height: 80%;
+    width: 100%;
+    justify-content: center;
+
+
+  }
+
+  iframe{
+
+    height: 100%;
+    width: 80%;
+
   }
