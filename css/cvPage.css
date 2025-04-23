@@ -13,49 +13,35 @@ html {
 
 
 
-.pdf-canva {
-    position: absolute;
-    top: 15%;
-    left: 10%;
-    width: 30%;
-    height: 75%;
-}
-
-.pdf-container2 {
-    position: absolute;
-    top: 15%;
-    left: 10%;
-    width: 50%;
-    height: 75%;
-}
-
 
 #CanvaFormat {
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 10%;
     width: 30%;
-    height: 3%;
+    height: 70%;
     /*color: #e6c153;*/
     color: black;
     font-size: 200%;
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
+    
 }
 
 #HarvardFormat {
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 50%;
     width: 30%;
-    height: 3%;
+    height: 70%;
     /*color: #e6c153;*/
     color: black;
     font-size: 200%;
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
-
+   
 }
+
 
 #svgWallpaper {
 
