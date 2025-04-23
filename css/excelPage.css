@@ -5,6 +5,8 @@ html, body {
     height: 100%;
     margin: 0; /* Es buena idea quitar márgenes por defecto */
     padding: 0; /* Es buena idea quitar paddings por defecto */
+    background-color: white;
+
   }
 
 #homepageButtonDiv {
@@ -108,11 +110,29 @@ html, body {
   
   }
 
-  #textDiv{
-
+  #textDiv {
+    display: grid;
+    justify-items: center; /* Center items horizontally within their grid cell */
     width: 100%;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
 
   }
+
+  #text {
+    width: 100%;
+    
+
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 120%;
+    
+    margin: 0;
+  }
+
 
   #excelDiv {
     display: flex;
@@ -126,6 +146,8 @@ html, body {
   iframe{
 
     height: 100%;
-    width: 80%;
+    width: 90%;
 
   }
+
+ 
