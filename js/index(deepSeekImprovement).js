@@ -9,7 +9,7 @@ const CONFIG = {
       defaultSize: "0",
       activeSize: "4%",
       specialIcons: {
-        ship: { width: "4.5%", height: "4.5%", x: "53%", y: "76.7%" },
+        ship: { width: "4.5%", height: "4.5%", x: "52.9%", y: "76.7%" },
         linkedIn: { width: "3.4%", height: "3.4%", x: "43.4%", y: "75%" },
         github: { width: "4.1%", height: "4.1%", x: "52.4%", y: "69%" },
         kaggle: { width: "5%", height: "5%", x: "30.55%", y: "71.5%" },
