@@ -3,7 +3,7 @@ const CONFIG = {
     circle: {
       defaultRadius: "1%",
       activeRadius: "2%",
-      excludedCircles: [3, 2, 9, 19, 18, 29, 1, 6, 20]
+      excludedCircles: [ 2, 9, 19, 18, 29, 1, 6, 20, 15]
     },
     icons: {
       defaultSize: "0",
@@ -15,7 +15,9 @@ const CONFIG = {
         kaggle: { width: "5%", height: "5%", x: "30.55%", y: "71.5%" },
         excel: { width: "4.5%", height: "4.5%", x: "60.65%", y: "72.6%" },
         sql: { width: "4.2%", height: "4.2%", x: "36%", y: "63.8%" },
-        powerBI: { width: "6.8%", height: "6.8%", x: "53.8%", y: "53.7%" }
+        powerBI: { width: "6.8%", height: "6.8%", x: "53.8%", y: "53.7%" },
+        python: { width: "5.5%", height: "5.5%", x: "48.75%", y: "59.2%" },
+        aws: { width: "5%", height: "5%", x: "27.5%", y: "58.6%" }
       }
     },
     text: {
@@ -36,7 +38,9 @@ const CONFIG = {
       kaggle: document.getElementById("kaggleIcon"),
       excel: document.getElementById("excelIcon"),
       sql: document.getElementById("sqlIcon"),
-      powerBI: document.getElementById("powerBI")
+      powerBI: document.getElementById("powerBI"),
+      python: document.getElementById('pythonIcon'),
+      aws: document.getElementById('awsIcon')
     }
   };
   
@@ -128,14 +132,15 @@ const CONFIG = {
     });
   
     // Activate special icons
-    const { linkedIn, github, kaggle, excel, sql, powerBI } = CONFIG.icons.specialIcons;
+    const { linkedIn, github, kaggle, excel, sql, powerBI, python, aws } = CONFIG.icons.specialIcons;
     setIconAttributes(elements.specialIcons.linkedIn, linkedIn);
     setIconAttributes(elements.specialIcons.github, github);
     setIconAttributes(elements.specialIcons.kaggle, kaggle);
     setIconAttributes(elements.specialIcons.excel, excel);
     setIconAttributes(elements.specialIcons.sql, sql);
     setIconAttributes(elements.specialIcons.powerBI, powerBI);
-  
+    setIconAttributes(elements.specialIcons.python, python);
+    setIconAttributes(elements.specialIcons.aws, aws);
     // Position under construction icons
     positionUnderConstructionIcons();
   }
@@ -180,7 +185,9 @@ const CONFIG = {
       { element: document.getElementById('kaggleIcon'), circleId: 'circle3' },
       { element: document.getElementById('excelIcon'), circleId: 'circle29' },
       { element: document.getElementById('sqlIcon'), circleId: 'circle6' },
-      { element: document.getElementById('powerBI'), circleId: 'circle20' }
+      { element: document.getElementById('powerBI'), circleId: 'circle20' },
+      { element: document.getElementById('pythonIcon'), circleId: 'circle15' },
+      { element: document.getElementById('awsIcon'), circleId: 'circle4' }
     ];
   
     hoverMappings.forEach(({ element, circleId }) => {
@@ -193,7 +200,7 @@ const CONFIG = {
   
     // Set up hover effects for under construction icons
     for (let i = 1; i < 33; i++) {
-      if (![4,5,7,8,10,11,12,13,14,15,16,17,21,22,23,24,25,26,27,28,30,31,32].includes(i)) continue;
+      if (![5,7,8,10,11,12,13,14,16,17,21,22,23,24,25,26,27,28,30,31,32].includes(i)) continue;
       
       const icon = document.getElementById(`uC${i}`);
       if (icon) {
