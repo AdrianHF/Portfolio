@@ -15,7 +15,7 @@ const CONFIG = {
         kaggle: { width: "5%", height: "5%", x: "30.55%", y: "71.5%" },
         excel: { width: "4.5%", height: "4.5%", x: "60.65%", y: "72.6%" },
         sql: { width: "4.2%", height: "4.2%", x: "36%", y: "63.8%" },
-        powerBI: { width: "6.8%", height: "6.8%", x: "53.8%", y: "53.7%" },
+        tableau: { width: "4.7%", height: "4.7%", x: "54.7%", y: "55.6%" },
         python: { width: "5.5%", height: "5.5%", x: "48.75%", y: "59.2%" },
         aws: { width: "5%", height: "5%", x: "27.5%", y: "58.6%" }
       }
@@ -38,7 +38,7 @@ const CONFIG = {
       kaggle: document.getElementById("kaggleIcon"),
       excel: document.getElementById("excelIcon"),
       sql: document.getElementById("sqlIcon"),
-      powerBI: document.getElementById("powerBI"),
+      tableau: document.getElementById("tableauIcon"),
       python: document.getElementById('pythonIcon'),
       aws: document.getElementById('awsIcon')
     }
@@ -132,13 +132,13 @@ const CONFIG = {
     });
   
     // Activate special icons
-    const { linkedIn, github, kaggle, excel, sql, powerBI, python, aws } = CONFIG.icons.specialIcons;
+    const { linkedIn, github, kaggle, excel, sql, tableau, python, aws } = CONFIG.icons.specialIcons;
     setIconAttributes(elements.specialIcons.linkedIn, linkedIn);
     setIconAttributes(elements.specialIcons.github, github);
     setIconAttributes(elements.specialIcons.kaggle, kaggle);
     setIconAttributes(elements.specialIcons.excel, excel);
     setIconAttributes(elements.specialIcons.sql, sql);
-    setIconAttributes(elements.specialIcons.powerBI, powerBI);
+    setIconAttributes(elements.specialIcons.tableau, tableau);
     setIconAttributes(elements.specialIcons.python, python);
     setIconAttributes(elements.specialIcons.aws, aws);
     // Position under construction icons
@@ -185,7 +185,7 @@ const CONFIG = {
       { element: document.getElementById('kaggleIcon'), circleId: 'circle3' },
       { element: document.getElementById('excelIcon'), circleId: 'circle29' },
       { element: document.getElementById('sqlIcon'), circleId: 'circle6' },
-      { element: document.getElementById('powerBI'), circleId: 'circle20' },
+      { element: document.getElementById('tableauIcon'), circleId: 'circle20' },
       { element: document.getElementById('pythonIcon'), circleId: 'circle15' },
       { element: document.getElementById('awsIcon'), circleId: 'circle4' }
     ];

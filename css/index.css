@@ -7,7 +7,7 @@ html {
   /*background-color: #fafdff;*/
   /*background-color: #E7F0F7; */
   background-color: #fcf8ee;
-
+ 
 }
 
 .cvFont {
@@ -76,8 +76,8 @@ html {
 .circleColors {
 
 
-  fill: #fcf8ee;
-
+  /*fill: #fcf8ee;*/
+  fill: rgba(236, 205, 117, 0.973);
 
 }
 
