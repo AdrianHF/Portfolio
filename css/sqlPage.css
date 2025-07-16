@@ -1,0 +1,47 @@
+#html, body{
+
+    background-color:#f0f0f0 ;
+}
+
+
+#headerDiv{
+background-color: #3E6E93;
+
+}
+
+
+
+#underConstructionDiv {
+    display: flex;
+    
+    justify-content: center;
+    height: 70%;
+    background-color: #f0f0f0;
+    width: 100%;
+}
+
+#underConstructionIcon {
+   width: 50%;
+    height: 50%;
+    padding-top:2% ;
+}
+
+#underConstructionText {
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    width: 100%;
+    font-size: 200%;
+    padding-top: 2%;
+    
+}
+
+#title {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-weight: 300;
+    text-align: left;
+    padding: 1.5%;
+}

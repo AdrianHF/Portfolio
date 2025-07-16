@@ -7,8 +7,14 @@ html {
   /*background-color: #fafdff;*/
   /*background-color: #E7F0F7; */
   background-color: #fcf8ee;
- 
+  
 }
+
+
+
+
+
+
 
 .cvFont {
 
@@ -40,13 +46,15 @@ html {
 }
 
 .clickable:hover line {
-  stroke: #d0e1ed;
+  stroke: #fcf8ee;
   transition: stroke 3s;
 }
 
 .clickable:hover text {
 
-  fill: #d0e1ed;
+
+  fill: #fcf8ee;
+
   transition: fill 3s;
 }
 
@@ -73,13 +81,6 @@ html {
   opacity: 0;
 }
 
-.circleColors {
-
-
-  /*fill: #fcf8ee;*/
-  fill: rgba(236, 205, 117, 0.973);
-
-}
 
 .oswald-text {
   font-family: "Oswald", sans-serif;
@@ -124,3 +125,6 @@ html {
 
 }
 
+#wholePageSvg.first-visit .circle-hover {
+  fill: #C4BDAB; /* The "dim" color for MOST circles */
+}

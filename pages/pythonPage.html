@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel='stylesheet' href="../css/prism.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
 
 </head>
 
@@ -99,12 +101,16 @@
         <h1 id="title">Welcome to the Python Code Page!</h1>
     </div>
     <div id="descriptionDiv">
-        <p id='descriptionText' class="robotoFont"> Here you will find the python code used along my projects </p>
+        <p id='descriptionText' class="robotoFont"> Here you’ll find the Python code I’ve used throughout my projects
+        </p>
     </div>
 
     <div id="codeBoxesContainer">
 
         <div id="titanicPythonCode">
+
+
+
 
 
             <div id="firstLine">
@@ -123,65 +129,1080 @@
                 <p id="viewHere"> View Here </p><img id="expandIcon" src="../assets/svgIcons/expand.svg">
             </div>
 
-           
 
-                <pre id="pythonCode">
-                <code  class = 'language-python' >
-                    import pandas as pd
-from sklearn.linear_model import LogisticRegression
+            <div id="containerTitanicPythonBlocks">
+
+                <div id='firstTitanicPythonBlock' class='titanicPythonBlocks'>
+
+
+                    <div class="pythonBlockTitle">Data Transformation.py</div>
+                    <div class='descriptionPythonBlocks'>
+                        Here we prepare the train.csv data to be used by the machine learning model
+
+                    </div>
+                    <div class='divPythonBlocksExpand'>
+                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg class="pythonBlocksExpand" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 18L18 12L12 6" stroke="#222222" />
+                            <path d="M6 18L12 12L6 6" stroke="#222222" />
+                        </svg>
+                    </div>
+
+
+
+                </div>
+
+                <div id='secondTitanicPythonBlock' class='titanicPythonBlocks'>
+                    <div class="pythonBlockTitle">DT TEST.py</div>
+
+                    <div class='descriptionPythonBlocks'>
+                        Here we apply the same preparation steps to the test.csv data
+
+                    </div>
+                    <div class='divPythonBlocksExpand'>
+                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg class="pythonBlocksExpand" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 18L18 12L12 6" stroke="#222222" />
+                            <path d="M6 18L12 12L6 6" stroke="#222222" />
+                        </svg>
+
+                    </div>
+                </div>
+
+                <div id='thirdTitanicPythonBlock' class='titanicPythonBlocks'>
+                    <div class="pythonBlockTitle">Final Model.py</div>
+
+                    <div class='descriptionPythonBlocks'>
+                        Here we train the final model using the prepared data
+                    </div>
+
+                    <div class='divPythonBlocksExpand'>
+                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg class="pythonBlocksExpand" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 18L18 12L12 6" stroke="#222222" />
+                            <path d="M6 18L12 12L6 6" stroke="#222222" />
+                        </svg>
+                    </div>
+
+                </div>
+
+                <div id='fourthTitanicPythonBlock' class='titanicPythonBlocks'>
+                    <div class="pythonBlockTitle">FinalPrediction.py</div>
+
+                    <div class='descriptionPythonBlocks'>
+                        Here we use the trained model to make the final predictions
+                    </div>
+                    <div class='divPythonBlocksExpand'>
+                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg class="pythonBlocksExpand" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 18L18 12L12 6" stroke="#222222" />
+                            <path d="M6 18L12 12L6 6" stroke="#222222" />
+                        </svg>
+
+                    </div>
+
+
+                </div>
+
+                <div id='fifthTitanicPythonBlock' class='titanicPythonBlocks'>
+                    <div class="pythonBlockTitle">Optuna.py</div>
+
+                    <div class='descriptionPythonBlocks'>
+                        Here we automate the training process to find the best parameters for the model
+                    </div>
+                    <div class='divPythonBlocksExpand'>
+                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg class="pythonBlocksExpand" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 18L18 12L12 6" stroke="#222222" />
+                            <path d="M6 18L12 12L6 6" stroke="#222222" />
+                        </svg>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+            <pre id='pyDataTransformation' class="language-python">
+            <code>
+import pandas as pd
+import numpy as np
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, classification_report
-from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import mean_absolute_error, r2_score, mean_squared_error
+from catboost import CatBoostRegressor
 
 
-df = pd.read_csv('titanic_clean.csv')
+#Reading CSV file
+df = pd.read_csv('train.csv')
+
+print('Null values in Data Frame: \n', df.isnull().sum())
+
+
+#Dropping cabin column // # Setting inplace=True applies the change directly to the existing DataFrame
+df.drop(columns=['Cabin'], inplace=True)
+
+
+#Calculating mode for Embarked Column and replacing missing values
+
+print('Most repeated value in Embarked column: \n',df['Embarked'].value_counts()) #This shows us the value 'S' is the most repeated one
+df['Embarked'] = df['Embarked'].fillna('S')
+
+
+#Adding new column 'Title'
+
+pd.set_option('display.max_rows', None) #Used to display all the rows in our dataframe, this way we can explore it better
+
+df['Title'] = None #Setting this column to none will help us filter the data by doing the following for each title we find:
+
+df['Title'] = df['Name'].str.extract('(Mr\.)')
+print('Extracted titles: \n', df['Title'].value_counts()) #Let's see how many values we were able to filter so far
+print('Null values: \n',df['Title'].isnull().value_counts()) #Let's see how many values on our new title column are empty
+
+#This process was repeteated multiple times until we got the following filter: 
+df['Title'] = df['Name'].str.extract(
+'(Mr\.|Mrs\.|Miss|Dr\.|Master\.|Rev\.|Col\.|Major\.|Mlle\.|Jonkheer\.|Countess\. of|Mme\.|Don\.|Mme\.|Ms\.|Lady\.|Sir\.|Capt\.)'
+)
+print('Extracted titles: \n',df['Title'].value_counts()) 
+print('Null values: \n',df['Title'].isnull().value_counts()) #We should not have any null values left
+
+df['Title'] = df['Title'].str.replace('.','') #Just taking out the '.' to make the column look better
+
+
+
+
+#Let's see if the data can be grouped and how is grouped
+print('Initial Ticket Groups: \n',df['Ticket'].value_counts())
+
+
+# Some entries contain purely numeric values, while others mix letters and numbers.
+# Let's create a filter to isolate the entries with numeric-only values.
+booleanMaskForNumbers = pd.to_numeric(df['Ticket'],errors='coerce').notna()
+
+#This will show us the tickets that are only numbers
+print('Numeric Tickets: \n', df.loc[booleanMaskForNumbers,['Ticket']].count())
+
+
+#Let's begin filtering the data by creating a new column called 'NewTicket' with the information for the numeric tickets we just found
+
+df['NewTicket'] = None
+df.loc[booleanMaskForNumbers,['NewTicket']] = 'NUMERIC-TICKETS'
+
+print('NewTicket Value counts: \n',df['NewTicket'].count()) #Let's see how many of the values on our new column are not empty
+
+
+# Now, we will create a new filter for null values (values that have not been filtered yet), to avoid redefining the variable
+# each time the dataframe changes, we will create a function that will create a boolean mask each time is called. 
+# The function will have a reverse argument which will do the opposite
+
+def get_unfiltered_values (reverse=False):
+    if reverse == False:
+        booleanMaskForNullValues = df['NewTicket'].isnull()
+    else:
+        booleanMaskForNullValues = ~df['NewTicket'].isnull()
+    return booleanMaskForNullValues
+
+
+# Now we can begin to filter the rest of the data in our ticket column, let's create another function that will print the
+# remaining values that need to be filtered:
+# The function will have a reverse argument which will do the opposite
+
+def show_unfiltered_values(reverse=False):
+    if reverse == False:
+        print('Unfiltered values: \n',df.loc[get_unfiltered_values(),['Ticket','NewTicket']]) 
+        #We are printing 'NewTicket' just to verify values are nulll
+    else:
+        print('Filtered values: \n', df.loc[get_unfiltered_values(reverse=True),['Ticket','NewTicket']])
+    
+show_unfiltered_values()
+
+#tempBooleanMask will serve as a temporary mask for the letters and sequence of letters that need to be filtered
+
+# 'PC' Categorical Value:
+
+tempBooleanMask = df['Ticket'].str.contains('PC',case=False)
+
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'PC'
+
+show_unfiltered_values(reverse=False)
+
+
+# 'SC/PARIS' Categorical Value: 
+
+tempBooleanMask = df['Ticket'].str.contains('PARIS', case=False )
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'SC/PARIS'
+
+
+# 'CA' Categorical Value:
+
+tempBooleanMask = df['Ticket'].str.contains('C', case=False ) & (
+    df['Ticket'].str.contains('C',case=False)
+) & (
+    df['Ticket'].str.contains('A',case=False)
+) & (
+    ~(df['Ticket'].str.contains('S',case=False))
+)
+
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'CA'
+
+
+# 'STON/02' Categorical Value:
+
+tempBooleanMask = df['Ticket'].str.contains('SOTON', case=False )& (
+    ~df['Ticket'].str.contains('C',case=False)
+    ) | (
+        df['Ticket'].str.contains('STON', case= False)
+        )
+
+
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'STON/02'
+
+
+
+# 'SOC' Categorical Value:
+
+tempBooleanMask = df['Ticket'].str.contains('S', case= False) & (
+    df['Ticket'].str.contains('O',case=False)) & (
+        df['Ticket'].str.contains('C',case=False)) & (
+            ~df['Ticket'].str.contains('A|W',case=False)
+        )
+ 
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'SOC'
+
+
+
+# 'SOPP' Categorical Value:
+
+
+tempBooleanMask = df['Ticket'].str.contains('S',case= False) & (
+    df['Ticket'].str.contains('O',case= False)
+    ) & (
+        df['Ticket'].str.contains('P',case= False)
+        )
+
+
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'SOPP'
+
+
+
+# 'A5/A4' Categorical Value:
+
+tempBooleanMask = df['Ticket'].str.contains('A') & df['Ticket'].str.contains('5') 
+
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'A5/A4'
+
+
+# 'FCC' Categorical Value: 
+
+tempBooleanMask = df['Ticket'].str.contains('F',case=False) & ~df['Ticket'].str.contains('A',case=False)
+
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'FCC'
+
+
+# 'WC' Categorical Value:
+
+tempBooleanMask = ( df['Ticket'].str.contains('W', case=False)) & (
+    df['Ticket'].str.contains('C', case=False)
+    ) & (
+        ~df['Ticket'].str.contains('SCO',case=False)
+        )
+
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'WC'
+
+
+# 'PP' Categorical Value: 
+
+tempBooleanMask = df['Ticket'].str.contains('P',case=False) & (
+~df['Ticket'].str.contains('S', case=False)
+) & (
+    ~df['Ticket'].str.contains('W', case=False)
+    )
+
+
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'PP'
+
+
+# 'A5/A4' Categorical Value:
+
+tempBooleanMask =  df['Ticket'].str.contains('A', case=False) & (
+~df['Ticket'].str.contains('F',case=False)
+) & (
+    ~df['Ticket'].str.contains('SOTON') & ~df['Ticket'].str.contains('C')
+    )
+
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'A5/A4'
+
+
+# 'LINE' Categorical Value:
+
+tempBooleanMask = df['Ticket'].str.contains('LINE')
+
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'LINE'
+
+
+
+
+# 'C' Categorical Value:
+
+
+tempBooleanMask = (
+    df['Ticket'].str.contains('C', case=False) & ~df['Ticket'].str.contains('S', case=False)
+)
+
+
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'C'
+
+
+
+# 'WEP' Categorical Value:
+
+
+tempBooleanMask =  (
+df['Ticket'].str.contains('W', case=False) & df['Ticket'].str.contains('E', case=False) & df['Ticket'].str.contains('P', case=False)
+)
+
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'WEP'
+
+
+
+# 'SW/PP' Categorical Value:
+
+tempBooleanMask =  ( df['Ticket'].str.contains('S', case=False) ) & (
+    df['Ticket'].str.contains('W', case=False) 
+    ) & (
+        df['Ticket'].str.contains('P', case=False)
+        )
+
+
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'SW/PP'
+
+
+
+# 'OTHER/STRINGS' Categorical Value: 
+
+df.loc[get_unfiltered_values(),'NewTicket'] = 'OTHER/STRINGS'
+
+
+show_unfiltered_values()
+
+#Let's save our original Data Frame for later
+originalDF = df
+
+
+#Let's select all of the relevant data for our model: 
 
 print(df)
 
-x = df[['Sex','Age','Fare','FamilySize','IsAlone','Pclass_1', 'Pclass_2','Pclass_3']]
-y = df['Survived']
+df = df[['Survived','Pclass','Sex','Age','SibSp','Parch','Fare','Embarked','Title','NewTicket']]
 
 
-X_train, X_test, y_train, y_test = train_test_split(
-    x, y, 
-    test_size=0.1, 
-    random_state=42,  # Para reproducibilidad
-    stratify=y  # Mantiene proporción de clases en ambos conjuntos
+#Let's drop the missing age values
+booleanMask = df['Age'].notnull()
+
+df = df[booleanMask]
+
+
+#Let's assign our target variable and our independent variables
+
+
+x = df[['Survived','Pclass','Sex','SibSp','Parch','Fare','Embarked','Title','NewTicket']]
+y = df['Age']
+
+
+# We'll use the CatBoost Regressor, which excels at handling 
+# categorical features like the ones below:
+
+catColumns = ['Survived','Pclass','Sex','SibSp','Parch','Embarked','Title','NewTicket']
+
+
+#Let's split our data to train and then test it: 
+
+xTrain, xTest, yTrain, yTest = train_test_split(x, y, test_size=0.2, random_state=42)
+
+
+
+
+#Creating the model: 
+
+model = CatBoostRegressor(
+
+    iterations=500,
+    learning_rate=0.03,
+    depth=10,
+    random_state=42,
+    verbose=0,
+ 
 )
 
-scaler = StandardScaler()
-X_train_scaled = scaler.fit_transform(X_train)
-X_test_scaled = scaler.transform(X_test)
+model.fit(xTrain,yTrain,cat_features=catColumns)
 
 
-model = LogisticRegression(
-    max_iter=1000,  # Aumentar iteraciones
-    solver='lbfgs',  # Buen solver por defecto
-    class_weight='balanced',  # Opcional si hay desbalance de clases
-    random_state=42
+yPred = model.predict(xTest)
+
+
+# Let's calculate the evaluation metrics
+mae = mean_absolute_error(yTest, yPred)
+rmse = np.sqrt(mean_squared_error(yTest, yPred)) # RMSE is the sqrt of MSE
+r2 = r2_score(yTest, yPred)
+
+print("\nRegression Model Evaluation\n")
+print(f"Mean Absolute Error (MAE): {mae:.2f}")
+print(f"On average, our age prediction is off by {mae:.2f} years\n")
+
+print(f"Root Mean Squared Error (RMSE): {rmse:.2f}\n")
+
+print(f"R-squared (R²): {r2:.2f}")
+print(f"Our model explains {r2:.2%} of the variance in the age data\n")
+
+# Let's look at the predictions values vs actual values uisng Tableau: 
+
+results = pd.DataFrame({'Actual Age': yTest, 'Predicted Age': yPred})
+
+
+
+
+# Our Model is good but it can be better, let's select only the best columns for our model 
+
+print(model.get_feature_importance(prettified=True))
+
+
+#Let's select all of the relevant data for our model: 
+
+
+newDF = originalDF[['Survived','Pclass','Sex','Age','SibSp','Parch','Fare','Embarked','Title','NewTicket']]
+
+
+#Let's drop the missing age values
+booleanMask = newDF['Age'].notnull()
+
+newDF = newDF[booleanMask]
+
+
+#Let's assign our target variable and our independent variables
+
+
+x = newDF[['Title','Pclass','Parch','Embarked','SibSp','Fare','NewTicket']]
+y = newDF['Age']
+
+
+# Let's indicate which are categorical values: 
+
+catColumns = ['Title','Pclass','Parch','Embarked','SibSp','NewTicket']
+
+#Let's split our data again to train and then test it: 
+
+xTrain, xTest, yTrain, yTest = train_test_split(x, y, test_size=0.2, random_state=42)
+
+
+#Creating the model: 
+
+model = CatBoostRegressor(
+
+    iterations=500,
+    learning_rate=0.03,
+    depth=10,
+    random_state=42,
+    verbose=0,
+ 
 )
 
+model.fit(xTrain,yTrain,cat_features=catColumns)
 
-model.fit(X_train_scaled, y_train)
 
-# 5. Evaluar el modelo
-y_pred = model.predict(X_test_scaled)
+yPred = model.predict(xTest)
 
-print(f"Precisión: {accuracy_score(y_test, y_pred):.2f}")
-print("\nReporte de clasificación:")
-print(classification_report(y_test, y_pred))
+
+# Let's calculate the evaluation metrics
+mae = mean_absolute_error(yTest, yPred)
+rmse = np.sqrt(mean_squared_error(yTest, yPred)) # RMSE is the sqrt of MSE
+r2 = r2_score(yTest, yPred)
+
+print("\nRegression Model Evaluation\n")
+print(f"Mean Absolute Error (MAE): {mae:.2f}")
+print(f"On average, our age prediction is off by {mae:.2f} years\n")
+
+print(f"Root Mean Squared Error (RMSE): {rmse:.2f}\n")
+
+print(f"R-squared (R²): {r2:.2f}")
+print(f"Our model explains {r2:.2%} of the variance in the age data\n")
+
+#Let's retrain our model with the full data set: 
+
+
+model.fit(x,y,cat_features=catColumns)
+print('Final Model has ben trained')
+
+
+#Let's isolate the null values that we will be predicting: 
+
+print(originalDF.isnull().sum())
+
+nullAges = originalDF.loc[originalDF['Age'].isnull(),:]
+
+print(nullAges)
+
+x = nullAges[['Title','Pclass','Parch','Embarked','SibSp','Fare','NewTicket']]
+y = nullAges['Age']
+
+yPred = model.predict(x)
+
+
+#On the original DF, let's assign the null values to the ones we just predicted
+
+originalDF.loc[x.index,'Age'] = yPred
+
+
+print(originalDF)
+
+
+#Let's save our model to use it on the test.csv file
+model.save_model('AgeRegressor.cbm')
+
+
+#Let's save our results to use them to train our final model
+originalDF.to_csv('Data Frame Cleaned.csv')
+
+
 
                 </code>
-                </pre>
+            </pre>
 
-            
+
+            <pre id="pyDTTEST" class="language-python">
+            <code>
+
+from catboost import CatBoostRegressor
+
+import pandas as pd
+
+
+#We will be using the same code we used on our Data Transformation.py file to clean this csv
+
+df = pd.read_csv('test.csv')
+
+print(df.isnull().sum())
+
+
+
+print('Null values in Data Frame: \n', df.isnull().sum())
+
+
+#Dropping cabin column // # Setting inplace=True applies the change directly to the existing DataFrame
+df.drop(columns=['Cabin'], inplace=True)
+
+
+#Calculating mode for Embarked Column and replacing missing values
+
+print('Most repeated value in Embarked column: \n',df['Embarked'].value_counts()) #This shows us the value 'S' is the most repeated one
+df['Embarked'] = df['Embarked'].fillna('S')
+
+
+#Adding new column 'Title'
+
+pd.set_option('display.max_rows', None) #Used to display all the rows in our dataframe, this way we can explore it better
+
+df['Title'] = None #Setting this column to none will help us filter the data by doing the following for each title we find:
+
+df['Title'] = df['Name'].str.extract('(Mr\.)')
+print('Extracted titles: \n', df['Title'].value_counts()) #Let's see how many values we were able to filter so far
+print('Null values: \n',df['Title'].isnull().value_counts()) #Let's see how many values on our new title column are empty
+
+#This process was repeteated multiple times until we got the following filter: 
+df['Title'] = df['Name'].str.extract(
+'(Mr\.|Mrs\.|Miss|Dr\.|Master\.|Rev\.|Col\.|Major\.|Mlle\.|Jonkheer\.|Countess\. of|Mme\.|Don\.|Mme\.|Ms\.|Lady\.|Sir\.|Capt\.)'
+)
+print('Extracted titles: \n',df['Title'].value_counts()) 
+print('Null values: \n',df['Title'].isnull().value_counts()) #We should not have any null values left
+
+df['Title'] = df['Title'].str.replace('.','') #Just taking out the '.' to make the column look better
+
+
+
+
+#Let's see if the data can be grouped and how is grouped
+print('Initial Ticket Groups: \n',df['Ticket'].value_counts())
+
+
+# Some entries contain purely numeric values, while others mix letters and numbers.
+# Let's create a filter to isolate the entries with numeric-only values.
+booleanMaskForNumbers = pd.to_numeric(df['Ticket'],errors='coerce').notna()
+
+#This will show us the tickets that are only numbers
+print('Numeric Tickets: \n', df.loc[booleanMaskForNumbers,['Ticket']].count())
+
+
+#Let's begin filtering the data by creating a new column called 'NewTicket' with the information for the numeric tickets we just found
+
+df['NewTicket'] = None
+df.loc[booleanMaskForNumbers,['NewTicket']] = 'NUMERIC-TICKETS'
+
+print('NewTicket Value counts: \n',df['NewTicket'].count()) #Let's see how many of the values on our new column are not empty
+
+
+# Now, we will create a new filter for null values (values that have not been filtered yet), to avoid redefining the variable
+# each time the dataframe changes, we will create a function that will create a boolean mask each time is called. 
+# The function will have a reverse argument which will do the opposite
+
+def get_unfiltered_values (reverse=False):
+    if reverse == False:
+        booleanMaskForNullValues = df['NewTicket'].isnull()
+    else:
+        booleanMaskForNullValues = ~df['NewTicket'].isnull()
+    return booleanMaskForNullValues
+
+
+# Now we can begin to filter the rest of the data in our ticket column, let's create another function that will print the
+# remaining values that need to be filtered:
+# The function will have a reverse argument which will do the opposite
+
+def show_unfiltered_values(reverse=False):
+    if reverse == False:
+        print('Unfiltered values: \n',df.loc[get_unfiltered_values(),['Ticket','NewTicket']]) 
+        #We are printing 'NewTicket' just to verify values are nulll
+    else:
+        print('Filtered values: \n', df.loc[get_unfiltered_values(reverse=True),['Ticket','NewTicket']])
+    
+show_unfiltered_values()
+
+#tempBooleanMask will serve as a temporary mask for the letters and sequence of letters that need to be filtered
+
+# 'PC' Categorical Value:
+
+tempBooleanMask = df['Ticket'].str.contains('PC',case=False)
+
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'PC'
+
+show_unfiltered_values(reverse=False)
+
+
+# 'SC/PARIS' Categorical Value: 
+
+tempBooleanMask = df['Ticket'].str.contains('PARIS', case=False )
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'SC/PARIS'
+
+
+# 'CA' Categorical Value:
+
+tempBooleanMask = df['Ticket'].str.contains('C', case=False ) & (
+    df['Ticket'].str.contains('C',case=False)
+) & (
+    df['Ticket'].str.contains('A',case=False)
+) & (
+    ~(df['Ticket'].str.contains('S',case=False))
+)
+
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'CA'
+
+
+# 'STON/02' Categorical Value:
+
+tempBooleanMask = df['Ticket'].str.contains('SOTON', case=False )& (
+    ~df['Ticket'].str.contains('C',case=False)
+    ) | (
+        df['Ticket'].str.contains('STON', case= False)
+        )
+
+
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'STON/02'
+
+
+
+# 'SOC' Categorical Value:
+
+tempBooleanMask = df['Ticket'].str.contains('S', case= False) & (
+    df['Ticket'].str.contains('O',case=False)) & (
+        df['Ticket'].str.contains('C',case=False)) & (
+            ~df['Ticket'].str.contains('A|W',case=False)
+        )
+ 
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'SOC'
+
+
+
+# 'SOPP' Categorical Value:
+
+
+tempBooleanMask = df['Ticket'].str.contains('S',case= False) & (
+    df['Ticket'].str.contains('O',case= False)
+    ) & (
+        df['Ticket'].str.contains('P',case= False)
+        )
+
+
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'SOPP'
+
+
+
+# 'A5/A4' Categorical Value:
+
+tempBooleanMask = df['Ticket'].str.contains('A') & df['Ticket'].str.contains('5') 
+
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'A5/A4'
+
+
+# 'FCC' Categorical Value: 
+
+tempBooleanMask = df['Ticket'].str.contains('F',case=False) & ~df['Ticket'].str.contains('A',case=False)
+
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'FCC'
+
+
+# 'WC' Categorical Value:
+
+tempBooleanMask = ( df['Ticket'].str.contains('W', case=False)) & (
+    df['Ticket'].str.contains('C', case=False)
+    ) & (
+        ~df['Ticket'].str.contains('SCO',case=False)
+        )
+
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'WC'
+
+
+# 'PP' Categorical Value: 
+
+tempBooleanMask = df['Ticket'].str.contains('P',case=False) & (
+~df['Ticket'].str.contains('S', case=False)
+) & (
+    ~df['Ticket'].str.contains('W', case=False)
+    )
+
+
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'PP'
+
+
+# 'A5/A4' Categorical Value:
+
+tempBooleanMask =  df['Ticket'].str.contains('A', case=False) & (
+~df['Ticket'].str.contains('F',case=False)
+) & (
+    ~df['Ticket'].str.contains('SOTON') & ~df['Ticket'].str.contains('C')
+    )
+
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'A5/A4'
+
+
+# 'LINE' Categorical Value:
+
+tempBooleanMask = df['Ticket'].str.contains('LINE')
+
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'LINE'
+
+
+
+
+# 'C' Categorical Value:
+
+
+tempBooleanMask = (
+    df['Ticket'].str.contains('C', case=False) & ~df['Ticket'].str.contains('S', case=False)
+)
+
+
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'C'
+
+
+
+# 'WEP' Categorical Value:
+
+
+tempBooleanMask =  (
+df['Ticket'].str.contains('W', case=False) & df['Ticket'].str.contains('E', case=False) & df['Ticket'].str.contains('P', case=False)
+)
+
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'WEP'
+
+
+
+# 'SW/PP' Categorical Value:
+
+tempBooleanMask =  ( df['Ticket'].str.contains('S', case=False) ) & (
+    df['Ticket'].str.contains('W', case=False) 
+    ) & (
+        df['Ticket'].str.contains('P', case=False)
+        )
+
+
+df.loc[get_unfiltered_values() & tempBooleanMask, 'NewTicket'] = 'SW/PP'
+
+
+
+# 'OTHER/STRINGS' Categorical Value: 
+
+df.loc[get_unfiltered_values(),'NewTicket'] = 'OTHER/STRINGS'
+
+
+show_unfiltered_values()
+
+
+print(df.isnull().sum())
+
+
+print(df.dtypes)
+
+
+
+#Filling a couple of null values the code missed
+
+print(type(df['Fare'].mean()))
+
+print(df.loc[df['Fare'].isnull(),:])
+
+df.loc[df['Fare'].isnull(),'Fare'] = df['Fare'].mean()
+
+print(df.loc[df['PassengerId'] == 1044,:])
+
+
+print(df.isnull().sum())
+
+print(df.loc[df['Title'].isnull(),:])
+
+
+df.loc[df['Title'].isnull(),'Title'] = 'Dona'
+
+
+print(df.loc[df['Title'] == 'Dona',:])
+
+
+print(df.isnull().sum())
+
+
+
+
+#Let's use our Regressor to calculate the missing Age values on this CSV:
+
+model = CatBoostRegressor()
+
+model.load_model('AgeRegressor.cbm')
+
+
+nullAges = df.loc[df['Age'].isnull(),:]
+
+print(nullAges)
+
+x = nullAges[['Title','Pclass','Parch','Embarked','SibSp','Fare','NewTicket']]
+y = nullAges['Age']
+
+yPred = model.predict(x)
+
+
+#Assigning the predcited values to our null values:
+
+df.loc[x.index,'Age'] = yPred
+
+print(df)
+
+
+#Let's save our CSV to make the final submission
+
+df.to_csv('TEST CLEANED.csv',index=False)
+
+                </code>
+
+            </pre>
+
+            <pre id="pyFinalModel" class="language-python">
+            <code>import pandas as pd
+from sklearn.metrics import accuracy_score, classification_report
+from sklearn.model_selection import train_test_split
+from catboost import CatBoostClassifier
+
+
+
+#Let's train our final model:
+
+df = pd.read_csv('Data Frame Cleaned.csv')
+pd.set_option('display.max_rows', None) #Used to display all the rows in our dataframe, this way we can explore it better
+
+
+df = df[['Survived','Pclass','Sex','Age','Fare','Embarked','Title','SibSp','NewTicket','Parch']]
+
+x = df.drop(columns='Survived')
+y = df['Survived']
+
+catColumns = ['Pclass','Sex','Embarked','Title','NewTicket','SibSp','Parch']
+
+
+xTrain, xTest, yTrain, yTest = train_test_split(x,y,test_size=0.2, random_state=42)
+
+# These parameters were obtained using Optuna, see our Optuna.py script:
+
+
+model = CatBoostClassifier(
+
+    iterations= 234,
+    depth= 8,
+    learning_rate= 0.01276510161174044,
+    l2_leaf_reg= 6.426420823917269,
+    colsample_bylevel= 0.5404184013861993,
+    random_strength= 0.0006001048289888831,
+    bootstrap_type= 'Bayesian'
+
+)
+
+
+model.fit(xTrain, yTrain, cat_features=catColumns)
+predictions = model.predict(xTest)
+
+
+# Performance: 
+accuracy = accuracy_score(yTest, predictions)
+print(f"\nModel Accuracy: {accuracy:.4f}")
+
+# Precision, recall, f1-score
+print("\nClassification Report:")
+print(classification_report(yTest, predictions))
+
+
+#Let's retrain The model with all the values:
+
+model.fit(x,y,cat_features=catColumns)
+
+
+#Let's save our model
+
+model.save_model('FinalModel.cbm')
+
+
+                </code>
+
+            </pre>
+
+            <pre id="pyFinalPrediction" class="language-python">
+            <code>import pandas as pd
+from catboost import CatBoostClassifier
+
+
+df = pd.read_csv('TEST CLEANED.csv')
+
+
+pd.set_option('display.max_rows', None)
+
+
+print(df.isnull().sum())
+
+
+x = df[['Pclass','Sex','Age','Fare','Embarked','Title','SibSp','NewTicket','Parch']]
+
+model = CatBoostClassifier()
+
+model.load_model('FinalModel.cbm')
+
+
+df['Survived'] = model.predict(x)
+
+
+df = df[['PassengerId','Survived']]
+
+
+df.to_csv('ThirdSubmission.csv',index=False)
+print(df)
+
+
+#Our model got an Score of .78229 on Kaggle!!! 
+                </code>
+
+            </pre>
+
+            <pre id="pyOptuna" class="language-python">
+            <code>import pandas as pd
+from sklearn.model_selection import StratifiedKFold, cross_val_score
+from catboost import CatBoostClassifier
+import optuna
+
+
+df = pd.read_csv('Data Frame Cleaned.csv')
+pd.set_option('display.max_rows', None) #Used to display all the rows in our dataframe, this way we can explore it better
+
+
+df = df[['Survived','Pclass','Sex','Age','Fare','Embarked','Title','SibSp','NewTicket','Parch']]
+
+x = df.drop(columns='Survived')
+y = df['Survived']
+
+catColumns = ['Pclass','Sex','Embarked','Title','NewTicket','SibSp','Parch']
+
+
+
+def objective(trial):
+    parametters = {
+        'objective': 'Logloss',
+        'eval_metric': 'Accuracy',
+        'iterations': trial.suggest_int('iterations', 100, 1000),
+        'depth': trial.suggest_int('depth', 3, 10),
+        'learning_rate': trial.suggest_float('learning_rate', 0.01, 0.3, log=True),
+        'l2_leaf_reg': trial.suggest_float('l2_leaf_reg', 1.0, 10.0, log=True),
+        'colsample_bylevel': trial.suggest_float('colsample_bylevel', 0.1, 1.0),
+        'random_strength': trial.suggest_float('random_strength', 1e-8, 10.0, log=True),
+        'bootstrap_type': trial.suggest_categorical('bootstrap_type', ['Bayesian', 'Bernoulli', 'MVS']),
+        'verbose': 0, 
+        'random_seed': 42
+    }
+    
+    model = CatBoostClassifier(**parametters)
+    cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+    score = cross_val_score(
+        model, 
+        x, 
+        y, 
+        cv=cv, 
+        scoring='accuracy', 
+        params={'cat_features': catColumns}
+    ).mean()
+
+    return score
+
+
+
+study = optuna.create_study(direction='maximize', study_name='Titanic Optuna')
+
+study.optimize(objective, n_trials=100)
+
+
+# --- Results ---
+print("\n==================================")
+print("Optuna Study Results")
+print(f"Number of finished trials: {len(study.trials)}")
+
+print("Best trial:")
+best_trial = study.best_trial
+
+print(f"  Value (Mean CV Accuracy): {best_trial.value:.4f}")
+print("  Best hyperparameters:")
+for key, value in best_trial.params.items():
+    print(f"    {key}: {value}")
+
+'''
+Optuna Study Results
+Number of finished trials: 100
+Best trial:
+Value (Mean CV Accuracy): 0.8417
+Best hyperparameters:
+iterations: 234
+depth: 8
+learning_rate: 0.01276510161174044
+l2_leaf_reg: 6.426420823917269
+colsample_bylevel: 0.5404184013861993
+random_strength: 0.0006001048289888831
+bootstrap_type: Bayesian
+'''
+
+                </code>
+
+            </pre>
 
 
 
         </div>
     </div>
-<script src="../js/pythonPage.js"> </script>
-<script src="../js/prism.js"></script>
+    <script src="../js/pythonPage.js"> </script>
+    <script src="../js/prism.js"></script>
 </body>
 
 </html>

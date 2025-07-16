@@ -14,7 +14,7 @@ body {
     background-color: rgb(252, 248, 238);
     height: 100%;
     width: 100%;
-    padding: 1%;
+    padding: 0%;
    
     display: block;
     margin:0;
@@ -68,10 +68,8 @@ body {
     background-color:#3571a3;
     width: 100%;
     height: 15%;
+
     
-    border-radius: 5px;
-    
-   
     display: flex;
     align-items: center;
 
@@ -104,27 +102,28 @@ body {
 
 }
 
-
 #title {
     width: 70%;
     color: white;
-    font-family: 'robotoFont', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 150%;
     text-align: center;
+    font-weight: 400;
 }
 
 #descriptionDiv {
        
 
-    margin-top: .5%;
+    
     background-color: rgba(218, 218, 201, 0.842);
     width: 100%;
     height: 8%;
-    border-radius: 5px;
+    
 
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 
@@ -142,6 +141,9 @@ body {
     margin-top: .5%;
     flex-wrap: wrap;
     display: flex;
+    margin-left: 1%;
+        
+
 }
 
 #titanicPythonCode{
@@ -157,8 +159,28 @@ body {
     display:inline;
     align-items: center;
     justify-content: center;
-   
+    
 }
+
+
+
+
+#titanicPythonCode.expanded{
+border: 1px solid black;
+width: 100%;
+height: 50%;
+transition: .5s ease;
+overflow: hidden;  
+
+}
+
+#titanicPythonCode.expanded #secondLine, 
+#titanicPythonCode.expanded #expandIcon,
+#titanicPythonCode.expanded #shipIcon{
+display:none;
+}
+
+
 
 
 #firstLine{
@@ -177,6 +199,8 @@ body {
     width: 60%;
     height: 60%;
     justify-content: center;
+       
+
 
 }
 
@@ -187,6 +211,8 @@ width: 15%;
 height: 15%;
 
 }
+
+
 
 #secondLine{
 
@@ -235,4 +261,164 @@ a{
 text-decoration: none;
 color: inherit
 }
+
+
+#containerTitanicPythonBlocks{
+
+display: none;
+
+}
+
+#titanicPythonCode.expanded #containerTitanicPythonBlocks{
+
+display: flex;
+flex-direction: row; 
+justify-content: flex-start;
+width: 100%;
+height: 100%;
+margin: 0;
+
+}
+
+
+
+.titanicPythonBlocks{
+height: auto;
+width: 20%;
+background-color:  rgb(223, 215, 215);
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+margin: 0;
+
+}
+
+.titanicPythonBlocks:hover{
+
+background-color: rgb(192, 189, 189);
+cursor: pointer;
+}
+
+.pythonBlockTitle{
+text-align: center;
+align-content: center;
+margin: 0;
+padding: 7%;
+background-color: #8a8a8a;
+width: 100%;
+color: white;
+}
+.divPythonBlocksExpand{
+
+width: 100%;
+height: 20%;
+margin-top: auto;
+
+
+}
+.pythonBlocksExpand{
+height: 30px;
+width: 30px;
+    transform: rotate(90deg);
+
+
+}
+
+
+
+.descriptionPythonBlocks {
+align-content: center;
+width: 100%;
+height: auto;
+flex-grow: 1;
+margin-top: 0;
+padding-top: 5% ;
+padding-left: 5%;
+padding-right: 5%;
+text-align: justify;
+justify-content: center;
+
+
+}
+
+#pyDataTransformation{
+
+display: none;
+
+}
+
+#pyDataTransformation.expanded{
+
+margin-top: 0;
+display: flex;
+padding-left: 4%;
+margin-bottom: 0;
+
+}
+
+
+#pyDTTEST{
+
+display: none;
+
+}
+
+#pyDTTEST.expanded{
+
+margin-top: 0;
+display: flex;
+padding-left: 4%;
+margin-bottom: 0;
+
+}
+
+
+#pyFinalModel{
+
+display: none;
+
+}
+
+#pyFinalModel.expanded{
+
+margin-top: 0;
+display: flex;
+padding-left: 4%;
+margin-bottom: 0;
+
+}
+
+#pyFinalPrediction{
+
+display: none;
+
+}
+
+#pyFinalPrediction.expanded{
+
+margin-top: 0;
+display: flex;
+padding-left: 4%;
+margin-bottom: 0;
+
+}
+
+#pyOptuna{
+
+display: none;
+
+
+}
+
+#pyOptuna.expanded{
+
+margin-top: 0;
+display: flex;
+padding-left: 4%;
+margin-bottom: 0;
+
+}
+
 

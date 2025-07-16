@@ -1,6 +1,6 @@
 
 const tText = document.getElementById('transparentText');
-const button = document.getElementById('expandButton');
+const button = document.getElementById('expandButtonDiv');
 
 button.addEventListener('click', () => {
     if (!tText.classList.contains('visible')) {
