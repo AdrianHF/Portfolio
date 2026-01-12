@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Excel NoteBook</title>
-    <link rel="stylesheet" href="../css/header&fonts.css">
-    <link rel="stylesheet" href="../css/excelPage.css">
-    <link rel="icon" type="image/svg+xml" href="../assets/svgIcons/excelIconBW.svg">
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-    </style>
+    <title>Money Page</title>
+    <link rel="icon" href="../assets/svgIcons/moneySign.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/moneyPage.css">
 
 </head>
-
 <body>
-
-    <div id="headerDiv">
+    <div id="mainDiv">
+        <div id="headerDiv">
         <button id="goBackButton" onclick="window.location.href='../index.html'">
 
 
@@ -96,22 +88,33 @@
             <p id="goBackText"> GO <br> BACK</p>
         </button>
 
-        <h1 id="title">Welcome to the Excel Page!</h1>
+<p id="mainTitle">CURRENT DATE: <span id="currentDate"></span>
+<br>
+
+    CURRENT MONTH: <span id="currentMonth"></span>
+<br>
+
+    CURRENT TIME: <span id="currentTime"></span></p>
+
+
+        
+    </div>
+    
+
+<div id="contentDiv">  
+
+    <p id="contentDivTitle">
+    Things to pay this month
+    </p>
 
 
     </div>
 
-    <div id="pageDescription"> Here is a quick analysis using Excel of some data I found on Kaggle about a company that
-        sells courses
-    </div>
 
-    <div id="excelDiv">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no"
-            src="https://1drv.ms/x/c/29f2115569b93fc2/IQTxxGSuqQw_RbE6Yol8rEX_AbV99gI-pz2TP_j2l7V0GR4?em=2&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
-    </div>
+</div>
 
-    </div>
+<script src="../js/moneyPage.js"></script>
+
 
 </body>
-
 </html>

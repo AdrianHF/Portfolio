@@ -25,7 +25,7 @@ const CONFIG = {
   circle: {
     defaultRadius: "1%",
     activeRadius: "2%",
-    excludedCircles: [2, 9, 19, 18, 29, 1, 6, 20, 15]
+    excludedCircles: [2, 9, 19, 18, 29, 1, 6, 20, 15,8]
   },
   icons: {
     defaultSize: "0",
@@ -39,7 +39,9 @@ const CONFIG = {
       sql: { width: "4.2%", height: "4.2%", x: "36%", y: "63.8%" },
       tableau: { width: "4.7%", height: "4.7%", x: "54.7%", y: "55.6%" },
       python: { width: "5.5%", height: "5.5%", x: "48.75%", y: "59.2%" },
-      aws: { width: "5%", height: "5%", x: "27.5%", y: "58.6%" }
+      aws: { width: "5%", height: "5%", x: "27.5%", y: "58.6%" },
+      moneySign: { width: "4.8%", height: "4.8%", x: "36.63%", y: "56.52%" }
+
     }
   },
   text: {
@@ -64,7 +66,8 @@ const elements = {
     sql: document.getElementById("sqlIcon"),
     tableau: document.getElementById("tableauIcon"),
     python: document.getElementById('pythonIcon'),
-    aws: document.getElementById('awsIcon')
+    aws: document.getElementById('awsIcon'),
+    moneySign: document.getElementById('moneySignIcon')
   }
 };
 
@@ -176,7 +179,7 @@ function setIconAttributes(icon, attributes) {
   });
 
   // Activate special icons
-  const { linkedIn, github, kaggle, excel, sql, tableau, python, aws } = CONFIG.icons.specialIcons;
+  const { linkedIn, github, kaggle, excel, sql, tableau, python, aws, moneySign } = CONFIG.icons.specialIcons;
   setIconAttributes(elements.specialIcons.linkedIn, linkedIn);
   setIconAttributes(elements.specialIcons.github, github);
   setIconAttributes(elements.specialIcons.kaggle, kaggle);
@@ -185,6 +188,7 @@ function setIconAttributes(icon, attributes) {
   setIconAttributes(elements.specialIcons.tableau, tableau);
   setIconAttributes(elements.specialIcons.python, python);
   setIconAttributes(elements.specialIcons.aws, aws);
+  setIconAttributes(elements.specialIcons.moneySign, moneySign);
   // Position under construction icons
   positionUnderConstructionIcons();
 }
@@ -239,7 +243,8 @@ function setupHoverEffects() {
     { element: document.getElementById('sqlIcon'), circleId: 'circle6' },
     { element: document.getElementById('tableauIcon'), circleId: 'circle20' },
     { element: document.getElementById('pythonIcon'), circleId: 'circle15' },
-    { element: document.getElementById('awsIcon'), circleId: 'circle4' }
+    { element: document.getElementById('awsIcon'), circleId: 'circle4' },
+    { element: document.getElementById('moneySignIcon'), circleId: 'circle8' }
   ];
 
   hoverMappings.forEach(({ element, circleId }) => {
@@ -252,7 +257,7 @@ function setupHoverEffects() {
 
   // Set up hover effects for under construction icons
   for (let i = 1; i < 33; i++) {
-    if (![5, 7, 8, 10, 11, 12, 13, 14, 16, 17, 21, 22, 23, 24, 25, 26, 27, 28, 30, 31, 32].includes(i)) continue;
+    if (![5, 7, 10, 11, 12, 13, 14, 16, 17, 21, 22, 23, 24, 25, 26, 27, 28, 30, 31, 32].includes(i)) continue;
 
     const icon = document.getElementById(`uC${i}`);
     if (icon) {
